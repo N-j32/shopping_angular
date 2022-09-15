@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'shopping_angular';
+  name = 'Mynka';
+  clickSave(){
+    alert("Welcome to Mynka")
+  }
 }

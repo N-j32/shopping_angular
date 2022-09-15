@@ -4,11 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { NavComponent } from './nav/nav.component';
+import { UserComponent } from './user/user.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { LinkComponent } from './link/link.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavComponent,
+    UserComponent,
+    CategoriesComponent,
+    LinkComponent
   ],
   imports: [
     BrowserModule,

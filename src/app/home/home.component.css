@@ -1,0 +1,28 @@
+.d-block{
+    height: 400px;
+    width:100%
+}
+.card{
+    border: 2px solid rgb(220, 101, 165);
+    border-radius: 20px;
+    height: 400px;
+}
+.card-img-top{
+    height:300px;
+    border-radius: 20px;
+}
+.btn{
+    background-color: pink;
+    border-radius: 12px;
+    border:2px solid white;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: -10px;
+}
+.btn:hover{
+    background-color: black;
+}
+.card-img-t{
+    height:270px;
+    border-radius: 20px;
+}
