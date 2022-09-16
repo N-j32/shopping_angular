@@ -1,65 +1,80 @@
-<a href="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YmFnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" [style.list-style-type]="'square'">Your Search Result</a>
-<ul [ngSwitch]="product"> 
-  <li *ngSwitchCase="'Watch'">Watch</li>
-  <li *ngSwitchCase="'Sling'">Sling</li>
-  <li *ngSwitchCase="'Trolly'">Trolly</li>
-  <li *ngSwitchCase="'Bag'">Bag</li>
-  <li *ngSwitchDefault>Not Found</li>
+<a href="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YmFnfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+    [style.list-style-type]="'square'">Your Search Result</a>
+<ul [ngSwitch]="product">
+    <li *ngSwitchCase="'Watch'">Watch</li>
+    <li *ngSwitchCase="'Sling'">Sling</li>
+    <li *ngSwitchCase="'Trolly'">Trolly</li>
+    <li *ngSwitchCase="'Bag'">Bag</li>
+    <li *ngSwitchDefault>Not Found</li>
 </ul>
 <hr>
 <div class="ps">
-<!--Event to hide product details-->
- 
-<ul *ngIf="isVisible">
-    <!--Access the class products with ngClass-->
-    <!--Property Binding-->
-    <li *ngFor="let product of Products" [ngClass]="prod">
-        <br> {{product.productname}}
-    </li>
-  </ul>
-  <!--STYLE BINDING-->
-  <button class="btn"(click)="hide_products()" [style.background-color]="'	rgb(250, 56, 153)'">Hide Products</button>
+    <!--Event to hide product details-->
+
+    <ul *ngIf="isVisible">
+        <!--Access the class products with ngClass-->
+        <!--Property Binding-->
+        <li *ngFor="let product of Products" [ngClass]="prod">
+            <br> {{product.productname}}
+        </li>
+    </ul>
+    <!--STYLE BINDING-->
+    <button class="btn" (click)="hide_products()" [style.background-color]="'	rgb(250, 56, 153)'">Hide Products</button>
 </div>
-  <!--*ngSwitch for Product-->
-  <!--Property Binding-->
-  <br>
-  <br>
- 
-  
+<!--*ngSwitch for Product-->
+<!--Property Binding-->
+<br>
+<br>
+
+
 
 <!--TERNARY OPERATOR FOR STYLE BINDING-->
-<button [style.color]="errorcolor=='red1'?'red':'blue'">Product Status </button>
+<button [style.color]="errorcolor=='red1'?'red':'black'" [style.readius]="'20px'">Product Status </button>
 <div class="st">
-<!--Access the ProductDetails *ngFor and *ngSwitchCase-->
-<!--red,green,yellow classes are created in the component.css-->
-<ul *ngFor="let pdetails of ProductDetails" [ngSwitch]="pdetails.color">
-  <li *ngSwitchCase="'green'" class="green">
-     {{pdetails.pname}} <br> {{pdetails.status}}<hr>
-  </li>
-  <li *ngSwitchCase="'red'" class="red">
-    {{pdetails.pname}} <br>> {{pdetails.status}}<hr>
-  </li>
-  <li *ngSwitchDefault class="yellow">
-   {{pdetails.pname}} <br>>{{pdetails.status}}<hr>
-  </li>
-</ul>
-<hr>
+    <!--Access the ProductDetails *ngFor and *ngSwitchCase-->
+    <!--red,green,yellow classes are created in the component.css-->
+    <ul *ngFor="let pdetails of ProductDetails" [ngSwitch]="pdetails.color">
+        <li *ngSwitchCase="'green'" class="green">
+            {{pdetails.pname}} <br> {{pdetails.status}}
+            <hr>
+        </li>
+        <li *ngSwitchCase="'red'" class="yellow">
+            {{pdetails.pname}} <br>> {{pdetails.status}}
+            <hr>
+        </li>
+        <li *ngSwitchDefault class="red">
+            {{pdetails.pname}} <br>>{{pdetails.status}}
+            <hr>
+        </li>
+    </ul>
+    <hr>
 </div>
 <!--Bootstrap contextual classes(eg text-success)-->
 <!--PIPES-->
-<div class="s">
-<ul *ngFor="let pdetails of ProductDetails" [ngSwitch]="pdetails.status">
-  <li *ngSwitchCase="'Active'" class="text-success">
-   {{pdetails.pname}} - {{pdetails.status | uppercase}}
-  </li>
-  <li *ngSwitchCase="'InActive'" class="text-warning">
-     {{pdetails.pname}} - {{pdetails.status | uppercase}}
-  </li>
-  <li *ngSwitchDefault class="text-danger">
-    {{pdetails.pname}} - {{pdetails.status}}
-  </li>
-</ul>
-<hr>
-</div>
 
+
+
+
+   
+
+        <ul *ngFor="let pdetails of ProductDetails" [ngSwitch]="pdetails.status">
+            
+            <div class="sb">
+                <p *ngSwitchCase="'Active'" class="text-success">
+                    <img src="{{pdetails.img}} "><br>{{pdetails.pname}} - {{pdetails.status | uppercase}}
+                </p>
+            </div>
+            <div class="tb">
+            <p *ngSwitchCase="'InActive'" class="text-warning">
+                <img src="{{pdetails.img}}"> <br><br>{{pdetails.pname}} - {{pdetails.status | uppercase}}
+            </p>
+            </div>
+            <div class="fbb">
+                <p *ngSwitchCase="'Out of Stock'" class="text-danger">
+                    {{pdetails.pname}} -{{pdetails.status| uppercase}}<br>
+                    <img src="{{pdetails.img}}">
+                </p>
+            </div>
+        </ul>
+   
 

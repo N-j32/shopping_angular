@@ -34,3 +34,86 @@ font-size: 35px;
 font-weight: bolder;
     background-image: url("https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHdvbWVuJTIwZmFzaGlvbiUyMGFjY2Vzb3J5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
 }
+
+
+
+
+
+.card{
+    margin-top: 10px;
+    float: 50%;
+}
+
+
+.red {
+    color: red;
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  .yellow {
+    color: yellow;
+  }
+  /*Styling using ngClass*/
+ 
+ 
+  .size{
+    font-size: 18px;
+  }
+  .card{
+    height:350px;
+    width:150px;
+    
+    list-style-type: none;
+  }
+ .fbb img{
+    height:250px;
+    width:200px;
+    margin-top: -450px;
+    border: 6px solid red;
+    border-radius: 20px;
+   
+    
+    
+ }
+ .fbb{
+    margin-left: 500px;
+   
+    
+    
+    
+ }
+ .fbb img:hover{
+    opacity: 0.5;
+ }
+ .fbb p{
+  
+ }
+ .sb img{
+    height:300px;
+    width:200px;
+    border: 6px solid green;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+   
+ }
+ .sb{
+    float:right;
+    
+ }
+ .tb img{
+    height:300px;
+    width:200px;
+    border: 6px solid yellow;
+    border-radius: 20px;
+    margin-top: 30px;
+    
+ }
+ .tb{
+    
+    float:middle;
+ }
+  
