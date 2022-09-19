@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as productdetails from '../data/product.json';
-
+import * as product from '../data/product.json';
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
@@ -11,5 +10,5 @@ export class UserComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  product:any = (productdetails as any).default;
+  product:any = (product as any).default;
 }

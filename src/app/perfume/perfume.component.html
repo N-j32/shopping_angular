@@ -4,7 +4,6 @@
     <div class="row">
         <!--1st column-->
         <div class="col col-lg-3">
-            
             <!--Property Binding-->
             <img [src]="f.img" class="prodimg">
         </div>
@@ -19,16 +18,16 @@
                     <div class="col-lg-9" style="margin-top:20px;">
                         <!--Interpolation Binding-->
                         <div>
-                            Product: {{f.pname }}
-                            
+                            Product: {{f.pname | uppercase}}
+                            <button (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></button>
                         </div>
                         <hr>
                         <div [hidden]="productDetail">
                             Description: {{f.pdescription}}
                             <br>
-                            Price: {{f.price }}
+                            Price: {{f.price | currency:'INR'}}
                             <br>
-                            <!--<app-counter></app-counter>-->
+                            <app-counter></app-counter>
                         </div>
                     </div>
                 </div>

@@ -1,8 +1,8 @@
-<marquee>Great deals in Nyka</marquee>
+<marquee>Big Billion Day Sale</marquee>
 <!--fetch all the records from product property in the .ts file which is accessing the products.json-->
-<br>
+
 <div class="row">
-    <marquee><app-allproduct></app-allproduct></marquee>
+   <marquee> <app-allproduct></app-allproduct></marquee>
 </div>
 
 <div *ngFor="let prod of product" style="border:none;margin-top:30px;">
@@ -10,6 +10,7 @@
         <!--1st column-->
         <div class="col col-lg-3">
             <!--Property Binding-->
+            <br>
             <img [src]="prod.img" class="prodimg">
         </div>
         <!--2nd column-->
@@ -24,13 +25,12 @@
                         <!--Interpolation Binding-->
                         <div>
                             Product: {{prod.pname | uppercase}}
-                            
                             <br>
                             Description: {{prod.pdescription}}
                             <br>
                             Price: {{prod.price | currency:'INR'}}
                             <br>
-                          <!--  <app-counter></app-counter>-->
+                            <app-counter></app-counter>
                         </div>
                     </div>
                 </div>
@@ -39,54 +39,8 @@
         <!--3rd column-->
         <div class="col col-lg-3">
             <!--Property Binding-->
+            <br>
             <img [src]="prod.img" class="prodimg">
         </div>
     </div>
 </div>
-<!--
-<marquee>Lightning deals in amazon</marquee>-->
-<!--fetch all the records from product property in the .ts file which is accessing the products.json-->
-<!--<hr>
-<div class="row">-->
-   <!--<app-allproduct></app-allproduct>--> 
-<!--</div>
-<hr>
-<div *ngFor="let prod of product" style="border:none;margin-top:30px;">
-    <div class="row">-->
-        <!--1st column-->
-        <!--<div class="col col-lg-3">-->
-            <!--Property Binding-->
-            <!--<img [src]="prod.img" class="prodimg">
-        </div>-->
-        <!--2nd column-->
-       <!--<div class="card col-lg-6" style="border:none;">
-            <div class="card-body col-lg-12">
-                <div class="row" style="margin-top:10px;border-style:solid;border-color:black;border-radius:15px;">
-                    <div class="col-lg-3">-->
-                        <!--Property Binding-->
-                        <!--<img [src]="prod.img">
-                    </div>
-                    <div class="col-lg-9" style="margin-top:20px;">-->
-                        <!--Interpolation Binding-->
-                       <!-- <div>
-                            Product: {{prod.pname | uppercase}}
-                            <br>
-                            Description: {{prod.pdescription}}
-                            <br>
-                            Price: {{prod.price | currency:'INR'}}
-                            <br>-->
-                          <!--  <app-counter></app-counter>-->
-                        <!--</div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!--3rd column-->
-        <!--<div class="col col-lg-3">-->
-            <!--Property Binding-->
-            <!--<img [src]="prod.img" class="prodimg">
-        </div>
-    </div>
-</div>
-
---> 

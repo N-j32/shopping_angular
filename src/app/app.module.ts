@@ -14,6 +14,8 @@ import { AdsComponent } from './ads/ads.component';
 import { AllproductComponent } from './allproduct/allproduct.component';
 import { HdecoreComponent } from './hdecore/hdecore.component';
 import { HdecoredetailsComponent } from './hdecore/hdecoredetails/hdecoredetails.component';
+import { CounterComponent } from './counter/counter.component';
+import { ChildcounterComponent } from './counter/childcounter/childcounter.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { HdecoredetailsComponent } from './hdecore/hdecoredetails/hdecoredetails
     AdsComponent,
     AllproductComponent,
     HdecoreComponent,
-    HdecoredetailsComponent
+    HdecoredetailsComponent,
+    CounterComponent,
+    ChildcounterComponent
   ],
   imports: [
     BrowserModule,

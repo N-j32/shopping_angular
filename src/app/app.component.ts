@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Mynka';
+  title='Mynka ';
+  displayval="";
+  getValue(val:string){
+    this.displayval=val;
+  }
   clickSave(){
     alert("Welcome to Mynka")
   }
