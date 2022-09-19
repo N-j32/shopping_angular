@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as productdetails from '../data/product.json';
 
 @Component({
   selector: 'app-user',
@@ -10,4 +11,5 @@ export class UserComponent implements OnInit {
   ngOnInit(): void {
     
   }
+  product:any = (productdetails as any).default;
 }

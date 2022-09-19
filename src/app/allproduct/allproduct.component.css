@@ -1,0 +1,16 @@
+.prodimg{
+    height:60px;
+    width:60px;
+    margin-left:100px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+    border: 2px solid rgb(237, 58, 162);
+    
+
+}
+h3{
+    margin-left:20px;
+    color:blue;
+    text-shadow: 2px 3px 2px red;
+}

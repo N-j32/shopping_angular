@@ -8,6 +8,12 @@ import { NavComponent } from './nav/nav.component';
 import { UserComponent } from './user/user.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { LinkComponent } from './link/link.component';
+import { CardsComponent } from './cards/cards.component';
+import { PerfumeComponent } from './perfume/perfume.component';
+import { AdsComponent } from './ads/ads.component';
+import { AllproductComponent } from './allproduct/allproduct.component';
+import { HdecoreComponent } from './hdecore/hdecore.component';
+import { HdecoredetailsComponent } from './hdecore/hdecoredetails/hdecoredetails.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +22,13 @@ import { LinkComponent } from './link/link.component';
     NavComponent,
     UserComponent,
     CategoriesComponent,
-    LinkComponent
+    LinkComponent,
+    CardsComponent,
+    PerfumeComponent,
+    AdsComponent,
+    AllproductComponent,
+    HdecoreComponent,
+    HdecoredetailsComponent
   ],
   imports: [
     BrowserModule,
