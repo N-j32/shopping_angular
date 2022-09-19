@@ -16,6 +16,7 @@ import { HdecoreComponent } from './hdecore/hdecore.component';
 import { HdecoredetailsComponent } from './hdecore/hdecoredetails/hdecoredetails.component';
 import { CounterComponent } from './counter/counter.component';
 import { ChildcounterComponent } from './counter/childcounter/childcounter.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ChildcounterComponent } from './counter/childcounter/childcounter.compo
     HdecoreComponent,
     HdecoredetailsComponent,
     CounterComponent,
-    ChildcounterComponent
+    ChildcounterComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
