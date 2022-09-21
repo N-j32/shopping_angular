@@ -1,11 +1,11 @@
 <marquee>Grab the deals</marquee>
 <!--fetch all the records from fridge property in the .ts file which is accessing the refrigerator.json-->
 <div *ngFor="let f of perfume" style="border:none;">
-    <div class="row">
+    <div class="row" >
         <!--1st column-->
-        <div class="col col-lg-3">
+        <div class="col col-lg-3" [style.margin-top]="'30px'">
             <!--Property Binding-->
-            <img [src]="f.img" class="prodimg">
+            <app-ads></app-ads>
         </div>
         <!--2nd column-->
         <div class="card col-lg-6" style="border:none;">
@@ -19,7 +19,7 @@
                         <!--Interpolation Binding-->
                         <div>
                             Product: {{f.pname | uppercase}}
-                            <button (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"></button>
+                            <button (click)="showproductDetailsToggle()" [ngClass]="toggleContent()"[style.float]="'right'"></button>
                         </div>
                         <hr>
                         <div [hidden]="productDetail">
@@ -34,7 +34,7 @@
             </div>
         </div>
         <!--3rd column-->
-        <div class="col col-lg-3">
+        <div class="col col-lg-3"  [style.margin-top]="'30px'">
             <!--Property Binding-->
             <img [src]="f.img" class="prodimg">
         </div>

@@ -1,0 +1,13 @@
+h2{
+    margin-left: 45%;
+    color: rgb(199, 18, 96);
+    font-family: 'Bungee Spice', cursive;
+}
+.form{
+    border: 2px solid black;
+    border-radius:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+}

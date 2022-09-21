@@ -17,6 +17,7 @@ import { HdecoredetailsComponent } from './hdecore/hdecoredetails/hdecoredetails
 import { CounterComponent } from './counter/counter.component';
 import { ChildcounterComponent } from './counter/childcounter/childcounter.component';
 import { RegisterComponent } from './register/register.component';
+import { HomedecoreComponent } from './homedecore/homedecore.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { RegisterComponent } from './register/register.component';
     HdecoredetailsComponent,
     CounterComponent,
     ChildcounterComponent,
-    RegisterComponent
+    RegisterComponent,
+    HomedecoreComponent
   ],
   imports: [
     BrowserModule,

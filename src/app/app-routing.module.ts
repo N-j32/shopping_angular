@@ -7,6 +7,8 @@ import { CategoriesComponent } from './categories/categories.component';
 import { CardsComponent } from './cards/cards.component';
 import { PerfumeComponent } from './perfume/perfume.component';
 import { HdecoreComponent } from './hdecore/hdecore.component';
+import { RegisterComponent } from './register/register.component';
+import { HomedecoreComponent } from './homedecore/homedecore.component';
 
 
 const routes: Routes = [
@@ -25,7 +27,10 @@ const routes: Routes = [
             path:'perfume',component:PerfumeComponent
           },
           {
-            path:'hdecore',component:HdecoreComponent
+            path:'homedecore',component:HomedecoreComponent
+          },
+          {
+            path:'register',component:RegisterComponent
           }
           
 ];

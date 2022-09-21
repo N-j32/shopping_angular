@@ -27,7 +27,7 @@ showproductDetailsToggle()
 toggleContent(){
   var content='';
   if(this.productDetail){
-    content='fa-solid fa-arrow-up';
+    content="fa-light fa-angle-up"
   }
   else{
     content='fa-solid fa-arrow-down';

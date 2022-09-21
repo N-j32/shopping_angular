@@ -2,21 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>AngularNavbar</title>
+  <title>Mynka</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALkAAAB5CAMAAABSm3DaAAAAb1BMVEX///8EDhcAAAB1dXYDDxmUk5LJycvh4eHy8/QACRQNDxLp6ekAAA0ADBX6+voAAAeenp7R0dGJiYkbHB2ysrNVVVUsLS4ABQkRFBdmZ2fa29w1NTZmZ2s+QEK9vb1QUlSAgYFISUomJyqlp6ddXl+t4vYsAAACk0lEQVR4nO3a3XKyMBAGYLL8CBJ+lEhVWrXV+7/GL4gQaZ2aeJLtN+/TqdNJT95mliUsDQIAAAAAAAAAAAAAeC41St9ZnIRvy8l2l/qOY29PmSGp9p3Hnk4uRCSiqP8UsvtDm16TIQpa+c7jIJ+8U0Sx7zgvURRVH75DvCSlImsWvlO8ojxWgpTvFC+JSdDub92Obg66XN7+UF808k7qTQ/trfe+I490oQtycvYd+aYmfSPVd9PvHq31y5Hsct+ZB3sqhJOsYXLTTVvpllx2XPr/idyS08Z34pEaCt0++cF34tGqyRxyR7Jl0/3LT6dCZ9MUA8dCz1ou16eWOBR6RO++495JXTo6Jb7j3ik3lXVw+cXqXFnbFzqzR79DZVsurK7PYDjpWm45p+uzd7QsdH4Tjtiy0KtPVtentrJMzm+Sl26tji7ZlluxBEFotenV0XfOn85WyTkdtkbJ0qJcCmJzvjXSD4uOTqHvmI9cruVynajPv8yPEc8pXqxPusWTOcuFWzO/2pMolipf/IZhlQfD7IJj67CgOzqFLMvhGUWC0VO9i352QSr5Hcu/rOw7+rMp7pLTQ+hkU/WD2uF7HNtOn8MvBLE75faUzeic11PoTb6Onzpw3HLwJVV1rb6/TFmo+szvYWgu6frLsJudCcu41WvNhcnLoccUyaKfkN+3kDLUi4XIiPM79nx7e7zI7sYq0xsNpofcq3iaRtN6XEvNEIndlMjYTY/R1Wbc39xMqBkfgh8nH9c4/wfPyVTLdFLPGzklZ/NO7ofpbfR9yPW46bJh3BdPQ/SILmZt0VS3fsO3zIN+g0lmNP9PnVWr1/Qiu2HoXBJ+Nbtk3rjzuG2WId+WCAAAAAAAAAAAAADwX/gHRIceGoL+CAoAAAAASUVORK5CYII=">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-  <link rel="logo" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css">
+  <link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAHoAegMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAAAQcFBgIDBAj/xAAwEAABAwQBAgQEBQUAAAAAAAAAAQIDBAUGESEHEhMxMlEUIkGBFlNxkpQVUmGCkf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AvEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAId5ANp7kldZTB1LffKhceqqBltXt8Br+xHJwm99zVXe9/X2Ojpvld7qMkuuOZXMx9wgb3xdrGt8vUidqIi8OaqfcCzAE8gAAAAAAAAAAAAAAAABCpwUt1tttRar7b8koJpaVahvw800LlRzXInC8e7e5P9ULqNdz+x/iLFK+3taizrH4lPv6St5b/wBVNfoqgaJD0/zKeFksOeTvjkajmubJN8yLyi+sx+M4pmGQ2WC6QZpVQsmV6LE+WZzmK16tVFXu92qdHTybHqyw9uQ5JX26tp5Vj8N94fTtVnm3tb3IiIifLx/aezFIMSbT18NdldRS+DXzMhbHe3RNki7ttciI7ne+VTzXYV1WHE8xvcdZJBmlVGymq5KXbpZl8RWLpXJ83Cb2mv8ABjauhymizmgxhMsr6qedWPlkinkakTeVci7cvKNbv7oZTDo8TXGKepuuVVVLWy+LNNTR3p0bk25y+hHerWlXjaqenohbHXC53XJqlJlRXrT06zyLI/lEV23L6lRO1u/1AuFvl9fuSETQCAAAAAAAAAAAHF66TZyPJdaR1dbaqkbIsazwvjR6ebe5qpv7bA+ermzE4+pFd8bL8TYZnver6Zz08ORU2vp5VEf3Jxxpyexm/C6Pfm3D91QYu39NcnluFLaaqywQU0FQrpbiit+eNdbTfd8yaThO1OV50XL+AsS+uN2v+M0CrvB6Pfm3D91SWrhH9CbYKaPF5GyW1iua1Ucqqjt7VHb57tr9eSvuovT2anuVBdMTsNHPTxN7aigZG1rXrtV7lbtO5FRdLzvhDYuj+L3PG7NVrd40gmrJ0kSnRyL4bUbrnSqm19t+WgN/AAAAAAAAAAAAAAABGiQAIVNkgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB//Z">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-
   <app-root></app-root>
-  
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
